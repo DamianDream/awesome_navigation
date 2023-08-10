@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navigation</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+</head>
+
+<body>
+	<header class="primary-header flex">
+		<div>
+			<img src="./img/my_logotype.png" alt="logotype" class="logo">
+		</div>
+		<button class="mobile-nav-toggle" aria-expanded="false" aria-controls="primary-navigation">
+			<span class="sr-only">Menu</span>
+		</button>
+		<nav>
+			<ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
+				<li class="active">
+					<a href="#index" class="ff-sans text-dark uppercase">
+						<span aria-hidden="true">00</span>Home
+					</a>
+				</li>
+				<li>
+					<!-- aria-hidden="true" screen reader, do not read the text -->
+					<a href="#description" class="ff-sans text-dark uppercase">
+						<span aria-hidden="true">01</span>About
+					</a>
+				</li>
+				<li>
+					<a href="#crew" class="ff-sans text-dark uppercase">
+						<span aria-hidden="true">02</span>Projects
+					</a>
+				</li>
+				<li>
+					<a href="#technology" class="ff-sans text-dark uppercase">
+						<span aria-hidden="true">03</span>Contact
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+</body>
+
+</html>
