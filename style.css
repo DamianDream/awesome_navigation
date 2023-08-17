@@ -74,11 +74,11 @@ a {
 /* body */
 
 body {
-	background-image: url('./img/podsolnuhi-vinsent-van-gog.jpg');
+	 /*background-image: url('./img/podsolnuhi-vinsent-van-gog.jpg');*/
 	background-repeat: no-repeat;
 	background-color: var(--clr-light);
 	background-size: cover;
-	/* background-position: center; */
+	 /*background-position: center;*/
 }
 
 /* header */
@@ -114,10 +114,10 @@ body {
 /* to check support we should provide prop + value */
 @supports (backdrop-filter: blur(1rem)) {
 
-	.primary-navigation {
+	/* .primary-navigation {
 		background: hsl(0 0% 90% / 0.5);
 		backdrop-filter: blur(1rem);
-	}
+	} */
 }
 
 .primary-navigation a > span {
@@ -126,6 +126,16 @@ body {
 		depending on the values defined for writing-mode,
 		direction, and text-orientation. */
 	margin-inline-end: .75em;
+}
+
+.primary-nav-link:hover::after {
+	position: absolute;
+	/* top: 0; */
+	content: '';
+	display: block;
+	width: 2ch;
+	height: 1lh;
+	background-color: var(--clr-dark);
 }
 
 @media (max-width: 35em) {
